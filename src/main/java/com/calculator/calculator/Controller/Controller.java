@@ -56,9 +56,7 @@ public class Controller {
     ) {
         if (num1 == null || num2 == null) {
             return "Недостаточно данных. Пожалуйста, проверьте, что оба аргумента заданы корректно";
-        } else if (num2.equals(0)) {
-            return "Делить на 0 нельзя!";
         }
-        return num1 + " / " + num2 + " = " + calculations.divine(num1, num2).toString();
+        return num1 + " / " + num2 + " = " + calculations.divide(num1, num2).toString();
     }
 }
